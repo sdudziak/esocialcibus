@@ -9,7 +9,7 @@ class ESocialCibus extends CWidget
 
     public function run()
     {
-        echo '<iframe src="http://socialcibus.com/widget?width=' . ($this->shadow ? $this->width : ($this->width - 4)) . '&link_color=' . $this->linkColor . '" '
+        echo '<iframe src="http://socialcibus.com/widget?width=' . (!$this->shadow ? $this->width : ($this->width - 4)) . '&link_color=' . $this->linkColor . '" '
         . 'scrolling="no" '
         . 'frameBorder="0" '
         . 'style="border-width: 0; height: ' . $this->height . 'px; width: ' . $this->width . 'px;">'
